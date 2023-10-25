@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="icon.ico" type="image/x-icon">
     <title>Signed and Sealed in Ink Project</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-	<style type="text/css">
-    .tattoos img {
-        max-height: 300px; /* Set your desired maximum height here */
-        width: auto; /* Maintain the aspect ratio */
-    }
-</style>
-
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+	<link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        .tattoos img {
+            max-height: 300px; /* Set your desired maximum height here */
+            width: auto; /* Maintain the aspect ratio */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="assets/logo_noise.png" alt="project_logo">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/salemstatehistory">
+                <img src="assets/socials/instagram.png" alt="Instagram" style="max-width: 50px;">
+            </a>
+            <a href="https://trello.com/invite/b/zCFIalec/ATTIe9a1fa039448a0dec73294c8474f56aa769CE873/tattoo-project">
+                <img src="assets/socials/trello.png" alt="Trello" style="max-width: 50px;">
+            </a>
+        </div>
+        <img src="assets/feathered_logo.png" alt="project_logo">
         <a href="https://www.salemstate.edu/">
             <img id="corner-image" src="assets/ssu_logo.png" alt="Corner Image">
         </a>
@@ -28,43 +35,51 @@
             <center><h2>The History of the Tattoo</h2></center>
             <p>Tattoos have a rich history dating back thousands of years. They have been found on mummies in ancient Egypt, etched into the skin of indigenous tribes, and used for various purposes throughout time, from marking rites of passage to signifying social status. Tattoos have evolved from traditional to contemporary art forms and remain a fascinating testament to human expression and culture across different civilizations.</p>
             <center><iframe width="560" height="315" src="https://www.youtube.com/embed/MYn15yDBvxM?si=fDQKWtWEHg4OLkiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <br><br><br></center>
-            <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Xf_wgo7ZFiRgZXD_6smW8D61xVaFMqjhR6JYEDaM0yI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+            <br><br><br><br>
+			<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Xf_wgo7ZFiRgZXD_6smW8D61xVaFMqjhR6JYEDaM0yI&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
         </div>
 
-	<div class="sectwo">
-		<center><h2>Tattoos as Memorials</h2></center>
-		<p>We have interviewed countless students, staff members, and their friends and families about their tattoos to ascertain a better picture of how people utilize tattoos as a way of commemoration.</p>
-		<section class="tattoos">
-			<div>
-				<img src="assets/tattoo/1.jpg" alt="">
-			</div>
-			<div>
-				<img src="assets/tattoo/2.jpg" alt="">
-			</div>
-		</section>
-	</div>
+        <div class="section">
+            <center><h2>Tattoos as Memorials</h2></center>
+            <p>We have interviewed countless students, staff members, and their friends and families about their tattoos to ascertain a better picture of how people utilize tattoos as a way of commemoration.</p>
+			<center>
+			   <section class="tattoos">
+					<div>
+						<img src="assets/tattoo/1.jpg" alt="">
+						<div class="img-text">
+							<h2>This was the Tattoo I came out of the womb with. -Jacked Dude</h2>
+						</div>
+					</div>
+					<div>
+						<img src="assets/tattoo/2.jpg" alt="">
+						<div class="img-text">
+							<h2>I don't even remember getting this one!! -Other Guy</h2>
+						</div>
+					</div>
+				</section>
+			<center>
+        </div>
 
-
-		
-
-		
-		
         <div class="section">
             <h2>Who's Behind the Project?</h2>
             <p>The "Signed and Sealed in Ink" Project was the brainchild of the Introduction to Public History Class (HST305) under Dr. Margo Shea. A brief profile of every student and bio of every student will be attached below, akin to the tattoo profile above.</p>
         </div>
     </div>
-    <script src="script.js"></script>
-	  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-	  <script type="text/javascript">
-		$('.tattoos').slick({
-		centerMode: true,
-		lazyLoad: 'ondemand', // ondemand progressive anticipated
-        infinite: true,
-		arrows: true,
-		dots: true,
-		});
-    </script>
+	
+	<div class="secthree">
+		<script src="script.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.tattoos').slick({
+			infinite: true,
+			dots: true,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 2000
+			});
+		</script>
+	</div>
 </body>
 </html>

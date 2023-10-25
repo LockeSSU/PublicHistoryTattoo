@@ -4,21 +4,40 @@ body {
 }
 
 header {
-    background-image: url('assets/header_unfocus.png'); /* Update the path to your image */
+    background-image: url('assets/header_unfocus.png');
     background-size: cover;
-    background-attachment: fixed; /* Keeps the background fixed */
+    background-attachment: fixed;
     color: #fff;
-    padding: 40px 0;
+    padding: 160px 0;
     text-align: center;
-    transition: background-position 0.8s; /* Add a transition effect */
-    position: relative; /* Set the position of the header to relative */
+    transition: background-position 0.8s;
+    position: relative;
 }
 
 header img#corner-image {
-    position: fixed; /* Set the position of the image to fixed */
-    top: 0; /* Adjust top to 0 to remove the gap at the top */
-    left: 0; /* Adjust left to 0 to position the image at the left-most part of the screen */
-    z-index: 1; /* Set a higher z-index to ensure the image is above the body content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border: none;
 }
 
 .content {
@@ -39,3 +58,52 @@ header img#corner-image {
     opacity: 1;
     transform: translateY(0);
 }
+
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+	.slick-prev {
+		left: 450px; /* Adjust the distance from the left edge */
+	}
+
+	.slick-next {
+		right: 450px; /* Adjust the distance from the right edge */
+	}
